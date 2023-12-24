@@ -8,6 +8,7 @@ import { FormationsComponent } from './formations/formations.component';
 import { EspaceCandidatsComponent } from './espace-candidats/espace-candidats.component';
 import { EspaceFormateursComponent } from './espace-formateurs/espace-formateurs.component';
 import { EspacePriveComponent } from './espace-prive/espace-prive.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EspacePriveComponent } from './espace-prive/espace-prive.component';
     FormationsComponent,
     EspaceCandidatsComponent,
     EspaceFormateursComponent,
-    EspacePriveComponent
+    EspacePriveComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
