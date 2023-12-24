@@ -9,6 +9,7 @@ import { EspaceCandidatsComponent } from './espace-candidats/espace-candidats.co
 import { EspaceFormateursComponent } from './espace-formateurs/espace-formateurs.component';
 import { EspacePriveComponent } from './espace-prive/espace-prive.component';
 import { HeaderComponent } from './header/header.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     EspaceCandidatsComponent,
     EspaceFormateursComponent,
     EspacePriveComponent,
-    HeaderComponent
+    HeaderComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
