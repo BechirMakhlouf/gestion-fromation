@@ -10,6 +10,7 @@ import { EspaceFormateursComponent } from './espace-formateurs/espace-formateurs
 import { EspacePriveComponent } from './espace-prive/espace-prive.component';
 import { HeaderComponent } from './header/header.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { ConnexionCandidatComponent } from './connexion-candidat/connexion-candidat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     EspaceFormateursComponent,
     EspacePriveComponent,
     HeaderComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    ConnexionCandidatComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
 import { AcceuilComponent } from "./acceuil/acceuil.component";
 import { FormationsComponent } from "./formations/formations.component";
 import { EspaceCandidatsComponent } from "./espace-candidats/espace-candidats.component";
 import { EspaceFormateursComponent } from "./espace-formateurs/espace-formateurs.component";
 import { EspacePriveComponent } from "./espace-prive/espace-prive.component";
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { NotFoundPageComponent } from "./not-found-page/not-found-page.component";
 
 const routes: Routes = [
   {
@@ -30,13 +30,18 @@ const routes: Routes = [
     component: EspacePriveComponent,
   },
   {
+    path: "",
+    redirectTo: "/acceuil",
+    pathMatch: "full",
+  },
+  {
     path: "**",
     component: NotFoundPageComponent,
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -6,6 +6,10 @@ export class Candidat {
   carteID: number;
   #password: string;
 
+  connexion(password: string): Candidat | undefined {
+    return password === this.#password ? this : undefined;
+  }
+
   constructor(
     nom: string,
     prenom: string,
